@@ -43,7 +43,7 @@ abstract contract ERC721Enumerable is ERC721, IERC721Enumerable {
     /**
      * @dev See {IERC721Enumerable-totalSupply}.
      */
-    function totalSupply() external view virtual override returns (uint256) {
+    function totalSupply() public view virtual override returns (uint256) {
         return _allTokensLength;
     }
 
